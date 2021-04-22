@@ -42,5 +42,28 @@ namespace PROYECTO_PROGRA_1.VISTA
             FrmBuscarDonante Busqueda = new FrmBuscarDonante();
             Busqueda.Show();
         }
+
+        private void FrmMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void requisitosParaDonacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmRequisitos Requisitos = new FrmRequisitos();
+            Requisitos.Show();
+        }
+
+        private void porqueDonarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPDonar InfoDonacion = new FrmPDonar();
+            InfoDonacion.Show();
+        }
+
+        private void btnCSanguinea_Click(object sender, EventArgs e)
+        {
+            FrmCompatibilidad Compatibilidad = new FrmCompatibilidad();
+            Compatibilidad.Show();
+        }
     }
 }

@@ -10,19 +10,16 @@ using System.Windows.Forms;
 
 namespace PROYECTO_PROGRA_1.VISTA
 {
-    public partial class FrmAgendarCita : Form
+    public partial class FrmPDonar : Form
     {
-        public FrmAgendarCita()
+        public FrmPDonar()
         {
             InitializeComponent();
         }
 
-        private void btnAceptarNombre_Click(object sender, EventArgs e)
+        private void btnSalirPDonar_Click(object sender, EventArgs e)
         {
-            FrmAgendarCitas2 FechaCita = new FrmAgendarCitas2();
-       
-            MessageBox.Show("\nBIENVENIDO\n");
-            FechaCita.Show();
+            this.Close();
         }
     }
 }

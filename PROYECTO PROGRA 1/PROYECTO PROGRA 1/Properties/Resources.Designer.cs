@@ -63,6 +63,26 @@ namespace PROYECTO_PROGRA_1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _0sagree {
+            get {
+                object obj = ResourceManager.GetObject("0sagree", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _gota_sangre {
+            get {
+                object obj = ResourceManager.GetObject("-gota-sangre", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap A_ {
             get {
                 object obj = ResourceManager.GetObject("A-", resourceCulture);
@@ -76,6 +96,36 @@ namespace PROYECTO_PROGRA_1.Properties {
         internal static System.Drawing.Bitmap banco_de_sangre_costa_rica6 {
             get {
                 object obj = ResourceManager.GetObject("banco-de-sangre-costa-rica6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap donar_sangre {
+            get {
+                object obj = ResourceManager.GetObject("donar_sangre", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rojo {
+            get {
+                object obj = ResourceManager.GetObject("rojo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sangre_gif {
+            get {
+                object obj = ResourceManager.GetObject("sangre.gif", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

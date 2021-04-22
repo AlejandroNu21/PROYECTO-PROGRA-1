@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PROYECTO_PROGRA_1.MODEL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +16,23 @@ namespace PROYECTO_PROGRA_1.VISTA
         public FrmRUsuario()
         {
             InitializeComponent();
+           
         }
+    
 
-        private void FrmRUsuario_Load(object sender, EventArgs e)
+
+        void Carga()
         {
 
+        }
+
+        void Clear()
+        {
+            txtNDonante.Clear();
+        }
+        private void FrmRUsuario_Load(object sender, EventArgs e)
+        {
+           
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -36,5 +49,18 @@ namespace PROYECTO_PROGRA_1.VISTA
         {
           
         }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
+        }
+
+        
+        
     }
 }
