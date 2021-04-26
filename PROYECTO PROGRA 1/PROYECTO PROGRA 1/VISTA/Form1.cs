@@ -23,6 +23,7 @@ namespace PROYECTO_PROGRA_1
             MessageBox.Show("<>--Bienvenido al sistema de Banco de Sangre--<>");
             FrmMenu frm = new FrmMenu();
             frm.Show();
+            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)

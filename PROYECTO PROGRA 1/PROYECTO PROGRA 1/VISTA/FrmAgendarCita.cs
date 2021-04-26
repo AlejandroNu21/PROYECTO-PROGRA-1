@@ -21,8 +21,8 @@ namespace PROYECTO_PROGRA_1.VISTA
         {
             FrmAgendarCitas2 FechaCita = new FrmAgendarCitas2();
        
-            MessageBox.Show("\nBIENVENIDO\n");
             FechaCita.Show();
+            this.Hide();
         }
     }
 }

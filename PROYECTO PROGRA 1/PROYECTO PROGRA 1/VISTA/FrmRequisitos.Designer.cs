@@ -104,6 +104,7 @@ namespace PROYECTO_PROGRA_1.VISTA
             this.Name = "FrmRequisitos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Requisitos";
+            this.Load += new System.EventHandler(this.FrmRequisitos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

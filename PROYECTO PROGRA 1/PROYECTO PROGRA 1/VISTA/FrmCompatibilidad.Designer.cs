@@ -123,6 +123,7 @@ namespace PROYECTO_PROGRA_1.VISTA
             this.Name = "FrmCompatibilidad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Compatibilidad Sanguinea";
+            this.Load += new System.EventHandler(this.FrmCompatibilidad_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

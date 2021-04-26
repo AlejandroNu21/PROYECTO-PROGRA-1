@@ -20,6 +20,13 @@ namespace PROYECTO_PROGRA_1.VISTA
         private void btnSalirRequisitos_Click(object sender, EventArgs e)
         {
             this.Close();
+            FrmMenu frm = new FrmMenu();
+            frm.Show();
+        }
+
+        private void FrmRequisitos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

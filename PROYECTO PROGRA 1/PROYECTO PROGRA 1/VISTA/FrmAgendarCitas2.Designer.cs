@@ -144,6 +144,7 @@ namespace PROYECTO_PROGRA_1.VISTA
             this.Name = "FrmAgendarCitas2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agendar Citas";
+            this.Load += new System.EventHandler(this.FrmAgendarCitas2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

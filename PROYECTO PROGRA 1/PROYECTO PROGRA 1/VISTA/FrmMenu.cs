@@ -20,6 +20,8 @@ namespace PROYECTO_PROGRA_1.VISTA
         private void btnSalirMenu_Click(object sender, EventArgs e)
         {
             this.Close();
+            Form1 frm = new Form1();
+            frm.Show();
         }
 
         private void btnRUsuario_Click(object sender, EventArgs e)
@@ -27,6 +29,7 @@ namespace PROYECTO_PROGRA_1.VISTA
             
             FrmRUsuario Donante = new FrmRUsuario();
             Donante.Show();
+            this.Hide();
         }
 
         private void btnCitas_Click(object sender, EventArgs e)
@@ -34,6 +37,7 @@ namespace PROYECTO_PROGRA_1.VISTA
             
             FrmAgendarCita Citas = new FrmAgendarCita();
             Citas.Show();
+            this.Hide();
         }
 
         private void btnBuscarDonante_Click(object sender, EventArgs e)
@@ -41,6 +45,7 @@ namespace PROYECTO_PROGRA_1.VISTA
            
             FrmBuscarDonante Busqueda = new FrmBuscarDonante();
             Busqueda.Show();
+            this.Hide();
         }
 
         private void FrmMenu_Load(object sender, EventArgs e)
@@ -52,18 +57,21 @@ namespace PROYECTO_PROGRA_1.VISTA
         {
             FrmRequisitos Requisitos = new FrmRequisitos();
             Requisitos.Show();
+            this.Hide();
         }
 
         private void porqueDonarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmPDonar InfoDonacion = new FrmPDonar();
             InfoDonacion.Show();
+            this.Hide();
         }
 
         private void btnCSanguinea_Click(object sender, EventArgs e)
         {
             FrmCompatibilidad Compatibilidad = new FrmCompatibilidad();
             Compatibilidad.Show();
+            this.Hide();
         }
     }
 }

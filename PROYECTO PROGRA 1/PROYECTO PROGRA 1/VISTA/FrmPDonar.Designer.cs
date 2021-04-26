@@ -78,6 +78,7 @@ namespace PROYECTO_PROGRA_1.VISTA
             this.Name = "FrmPDonar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PORQUE DONAR";
+            this.Load += new System.EventHandler(this.FrmPDonar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

@@ -31,15 +31,15 @@ namespace PROYECTO_PROGRA_1.VISTA
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBuscarDonante));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lblDonanteaBuscar = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.txtDonanteaBuscar = new System.Windows.Forms.TextBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblDonanteaBuscar = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.txtDonanteaBuscar = new System.Windows.Forms.TextBox();
             this.btnEliminarDonante = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -59,34 +59,6 @@ namespace PROYECTO_PROGRA_1.VISTA
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(765, 150);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // lblDonanteaBuscar
-            // 
-            this.lblDonanteaBuscar.AutoSize = true;
-            this.lblDonanteaBuscar.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDonanteaBuscar.Location = new System.Drawing.Point(304, 50);
-            this.lblDonanteaBuscar.Name = "lblDonanteaBuscar";
-            this.lblDonanteaBuscar.Size = new System.Drawing.Size(201, 21);
-            this.lblDonanteaBuscar.TabIndex = 1;
-            this.lblDonanteaBuscar.Text = "Ingrese Donante a Buscar";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(429, 352);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(141, 39);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "SALIR";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // txtDonanteaBuscar
-            // 
-            this.txtDonanteaBuscar.Location = new System.Drawing.Point(270, 103);
-            this.txtDonanteaBuscar.Name = "txtDonanteaBuscar";
-            this.txtDonanteaBuscar.Size = new System.Drawing.Size(274, 20);
-            this.txtDonanteaBuscar.TabIndex = 3;
             // 
             // Column1
             // 
@@ -118,6 +90,34 @@ namespace PROYECTO_PROGRA_1.VISTA
             this.Column6.HeaderText = "Grupo_Sanguineo";
             this.Column6.Name = "Column6";
             // 
+            // lblDonanteaBuscar
+            // 
+            this.lblDonanteaBuscar.AutoSize = true;
+            this.lblDonanteaBuscar.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDonanteaBuscar.Location = new System.Drawing.Point(304, 50);
+            this.lblDonanteaBuscar.Name = "lblDonanteaBuscar";
+            this.lblDonanteaBuscar.Size = new System.Drawing.Size(201, 21);
+            this.lblDonanteaBuscar.TabIndex = 1;
+            this.lblDonanteaBuscar.Text = "Ingrese Donante a Buscar";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(429, 352);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(141, 39);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "SALIR";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtDonanteaBuscar
+            // 
+            this.txtDonanteaBuscar.Location = new System.Drawing.Point(270, 103);
+            this.txtDonanteaBuscar.Name = "txtDonanteaBuscar";
+            this.txtDonanteaBuscar.Size = new System.Drawing.Size(274, 20);
+            this.txtDonanteaBuscar.TabIndex = 3;
+            // 
             // btnEliminarDonante
             // 
             this.btnEliminarDonante.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -143,6 +143,7 @@ namespace PROYECTO_PROGRA_1.VISTA
             this.Name = "FrmBuscarDonante";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Busqueda de Donantes";
+            this.Load += new System.EventHandler(this.FrmBuscarDonante_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
