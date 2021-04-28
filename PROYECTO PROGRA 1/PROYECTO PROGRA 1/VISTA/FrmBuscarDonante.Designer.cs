@@ -93,22 +93,23 @@ namespace PROYECTO_PROGRA_1.VISTA
             // lblDonanteaBuscar
             // 
             this.lblDonanteaBuscar.AutoSize = true;
-            this.lblDonanteaBuscar.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDonanteaBuscar.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDonanteaBuscar.Location = new System.Drawing.Point(304, 50);
             this.lblDonanteaBuscar.Name = "lblDonanteaBuscar";
-            this.lblDonanteaBuscar.Size = new System.Drawing.Size(201, 21);
+            this.lblDonanteaBuscar.Size = new System.Drawing.Size(219, 18);
             this.lblDonanteaBuscar.TabIndex = 1;
             this.lblDonanteaBuscar.Text = "Ingrese Donante a Buscar";
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(429, 352);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(141, 39);
             this.button1.TabIndex = 2;
             this.button1.Text = "SALIR";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtDonanteaBuscar
@@ -120,19 +121,20 @@ namespace PROYECTO_PROGRA_1.VISTA
             // 
             // btnEliminarDonante
             // 
-            this.btnEliminarDonante.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarDonante.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnEliminarDonante.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarDonante.Location = new System.Drawing.Point(213, 352);
             this.btnEliminarDonante.Name = "btnEliminarDonante";
             this.btnEliminarDonante.Size = new System.Drawing.Size(141, 40);
             this.btnEliminarDonante.TabIndex = 4;
             this.btnEliminarDonante.Text = "ELIMINAR";
-            this.btnEliminarDonante.UseVisualStyleBackColor = true;
+            this.btnEliminarDonante.UseVisualStyleBackColor = false;
             // 
             // FrmBuscarDonante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(774, 418);
             this.Controls.Add(this.btnEliminarDonante);
             this.Controls.Add(this.txtDonanteaBuscar);
