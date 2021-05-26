@@ -38,7 +38,9 @@ namespace ProyectoProgramacion.VISTA
             this.lblTipoSangre = new System.Windows.Forms.Label();
             this.CmbTipoSangre = new System.Windows.Forms.ComboBox();
             this.btnCompatibilidadSanguinea = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSalirTipoSangre
@@ -117,11 +119,22 @@ namespace ProyectoProgramacion.VISTA
             this.btnCompatibilidadSanguinea.Text = "BUSCAR";
             this.btnCompatibilidadSanguinea.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ProyectoProgramacion.Properties.Resources.gota;
+            this.pictureBox1.Location = new System.Drawing.Point(84, 40);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(44, 41);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmCompatibilidadSanguinea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(606, 419);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnCompatibilidadSanguinea);
             this.Controls.Add(this.CmbTipoSangre);
             this.Controls.Add(this.lblTipoSangre);
@@ -132,6 +145,7 @@ namespace ProyectoProgramacion.VISTA
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Compatibilidad Sanguinea";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,5 +161,6 @@ namespace ProyectoProgramacion.VISTA
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.Button btnCompatibilidadSanguinea;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

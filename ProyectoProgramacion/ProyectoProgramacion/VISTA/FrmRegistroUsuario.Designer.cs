@@ -29,6 +29,7 @@ namespace ProyectoProgramacion.VISTA
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistroUsuario));
             this.btnAceptarUsuario = new System.Windows.Forms.Button();
             this.btnSalirUsuario = new System.Windows.Forms.Button();
@@ -52,7 +53,11 @@ namespace ProyectoProgramacion.VISTA
             this.lblGrupoSanguineo = new System.Windows.Forms.Label();
             this.CmbGrupoSanguineo = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAceptarUsuario
@@ -148,6 +153,7 @@ namespace ProyectoProgramacion.VISTA
             this.txtNombreDonante.Name = "txtNombreDonante";
             this.txtNombreDonante.Size = new System.Drawing.Size(180, 20);
             this.txtNombreDonante.TabIndex = 5;
+            this.txtNombreDonante.TextChanged += new System.EventHandler(this.txtNombreDonante_TextChanged);
             // 
             // txtDireccion
             // 
@@ -239,11 +245,26 @@ namespace ProyectoProgramacion.VISTA
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 15;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ProyectoProgramacion.Properties.Resources._gota_sangre;
+            this.pictureBox1.Location = new System.Drawing.Point(10, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // FrmRegistroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.CmbGrupoSanguineo);
             this.Controls.Add(this.lblGrupoSanguineo);
@@ -266,6 +287,8 @@ namespace ProyectoProgramacion.VISTA
             this.Text = "Registro de Usuario";
             this.Load += new System.EventHandler(this.FrmRegistroUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -295,5 +318,7 @@ namespace ProyectoProgramacion.VISTA
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

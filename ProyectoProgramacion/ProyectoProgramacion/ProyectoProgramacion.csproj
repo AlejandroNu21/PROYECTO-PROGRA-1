@@ -199,6 +199,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\gota1.png" />
     <None Include="Resources\Exit.jpg" />
     <None Include="Resources\0sagree.gif" />
     <None Include="Resources\sangre.gif.gif" />

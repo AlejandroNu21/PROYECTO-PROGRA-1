@@ -36,7 +36,7 @@ namespace ProyectoProgramacion.VISTA
 
                 foreach (var iteracion in Lista)
                 {
-
+                    btnAceptarUsuario.Enabled = false;
                     dataGridView1.Rows.Add(iteracion.Id, iteracion.NombreDonante, iteracion.Direccion, iteracion.Telefono, iteracion.Edad, iteracion.GrupoSanguineo);
                 }
             }
@@ -88,6 +88,11 @@ namespace ProyectoProgramacion.VISTA
                 }
             }
 
+        }
+
+        private void txtNombreDonante_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
