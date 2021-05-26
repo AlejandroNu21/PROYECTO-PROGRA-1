@@ -29,6 +29,7 @@ namespace ProyectoProgramacion.VISTA
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBienvenida));
             this.btnIngresarBienvenida = new System.Windows.Forms.Button();
             this.btnSalirBienvenida = new System.Windows.Forms.Button();
             this.lblBienvenida = new System.Windows.Forms.Label();
@@ -84,6 +85,7 @@ namespace ProyectoProgramacion.VISTA
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnSalirBienvenida);
             this.Controls.Add(this.btnIngresarBienvenida);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmBienvenida";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bienvenido";

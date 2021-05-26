@@ -29,13 +29,14 @@ namespace ProyectoProgramacion.VISTA
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCompatibilidadSanguinea));
             this.btnSalirTipoSangre = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lblTipoSangre = new System.Windows.Forms.Label();
-            this.CmbTipoSangre = new System.Windows.Forms.ComboBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblTipoSangre = new System.Windows.Forms.Label();
+            this.CmbTipoSangre = new System.Windows.Forms.ComboBox();
             this.btnCompatibilidadSanguinea = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -66,6 +67,21 @@ namespace ProyectoProgramacion.VISTA
             this.dataGridView1.Size = new System.Drawing.Size(563, 137);
             this.dataGridView1.TabIndex = 1;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Id";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Nombre Donante";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Grupo Sanguineo";
+            this.Column3.Name = "Column3";
+            // 
             // lblTipoSangre
             // 
             this.lblTipoSangre.AutoSize = true;
@@ -92,21 +108,6 @@ namespace ProyectoProgramacion.VISTA
             this.CmbTipoSangre.Size = new System.Drawing.Size(121, 21);
             this.CmbTipoSangre.TabIndex = 3;
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Id";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nombre Donante";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Grupo Sanguineo";
-            this.Column3.Name = "Column3";
-            // 
             // btnCompatibilidadSanguinea
             // 
             this.btnCompatibilidadSanguinea.Location = new System.Drawing.Point(302, 82);
@@ -126,6 +127,7 @@ namespace ProyectoProgramacion.VISTA
             this.Controls.Add(this.lblTipoSangre);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnSalirTipoSangre);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmCompatibilidadSanguinea";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Compatibilidad Sanguinea";

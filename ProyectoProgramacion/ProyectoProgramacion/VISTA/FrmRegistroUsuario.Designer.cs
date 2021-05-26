@@ -29,6 +29,7 @@ namespace ProyectoProgramacion.VISTA
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistroUsuario));
             this.btnAceptarUsuario = new System.Windows.Forms.Button();
             this.btnSalirUsuario = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -259,6 +260,7 @@ namespace ProyectoProgramacion.VISTA
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnSalirUsuario);
             this.Controls.Add(this.btnAceptarUsuario);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmRegistroUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de Usuario";

@@ -29,6 +29,7 @@ namespace ProyectoProgramacion.VISTA
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenu));
             this.btnSalirMenu = new System.Windows.Forms.Button();
             this.btnRUsuario = new System.Windows.Forms.Button();
             this.btnAgendarCita = new System.Windows.Forms.Button();
@@ -171,6 +172,7 @@ namespace ProyectoProgramacion.VISTA
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnSalirMenu);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

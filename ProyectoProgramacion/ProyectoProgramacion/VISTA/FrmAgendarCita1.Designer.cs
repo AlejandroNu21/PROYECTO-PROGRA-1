@@ -29,6 +29,7 @@ namespace ProyectoProgramacion.VISTA
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAgendarCita1));
             this.lblIngresarNombreCita = new System.Windows.Forms.Label();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.txtIngresarNombreCita = new System.Windows.Forms.TextBox();
@@ -91,6 +92,7 @@ namespace ProyectoProgramacion.VISTA
             this.Controls.Add(this.txtIngresarNombreCita);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.lblIngresarNombreCita);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAgendarCita1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agendar Cita 1";
