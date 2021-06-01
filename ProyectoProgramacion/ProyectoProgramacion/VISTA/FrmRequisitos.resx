@@ -117,6 +117,45 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>LO QUE DEBES SABER ANTES DE DONAR:
+• La donación es un acto voluntario. No debes donar si estás siendo presionado por alguna razón.
+• Toda la información que se solicita en la entrevista es importante para protegerte tanto como donante, y a las personas que recibirán la sangre.
+• La información otorgada es estrictamente confidencial.
+• Se realizará un chequeo de tu estado de salud, verificando tu peso, presión arterial y hemoglobina.
+• Al donar no contraes ninguna enfermedad, ya que todos los materiales que se utilizan son estériles y desechables.
+• La sangre será estudiada para detectar los diferentes agentes infecciosos que exige el Ministerio de Salud.
+
+PUEDES DONAR SI:
+✓Tienes más de 18 años y menos de 65 años.
+✓Gozas de buena salud.
+✓Pesas más de 50 kg.
+✓No estás en ayunas.
+✓No has tomado alcohol las últimas 12 horas.
+✓No estás embarazada.
+✓No has tenido Hepatitis después de los 12 años de edad.
+✓Han transcurrido más de 3 meses desde la última donación.</value>
+  </data>
+  <data name="richTextBox2.Text" xml:space="preserve">
+    <value>NO PUEDEN SER DONANTES:
+•Diabéticos insulinodependientes.
+•Hipertensos sin tratamiento.
+•Quienes se han inyectado drogas por vía de piel o venas.
+•Los portadores de infección por VIH (SIDA), Sífilis, Virus de Hepatitis B ó C y Enfermedad de Chagas.
+•Epilépticos en tratamiento.
+•Si sufres de afecciones cardíacas, renales, neurológicas, respiratorias o hematológicas.
+•Personas resfriadas.
+•Personas con cuadros diarreicos solo podrán donar después de 10 días del último episodio.
+•Quienes estén en tratamiento con antidepresivos, estabilizantes del ánimo o simiilares.
+•Personas sometidas a cirugías menores en los últimos 6 meses.
+•Si han pasado menos de 6 meses de un parto con o sin lactancia.
+•Los portadores de infección por VIH (SIDA), Sífilis, Virus de Hepatitis B ó C y Enfermedad de Chagas.
+
+DEBES ESPERAR UN AÑO ANTES DE DONAR SANGRE SI:
+•Has recibido transfusiones de componentes sanguíneos.
+•Te has tatuado, realizado acupuntura o perforado alguna parte de tu cuerpo.
+•Has tenido más de una pareja sexual en los últimos 12 meses.</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

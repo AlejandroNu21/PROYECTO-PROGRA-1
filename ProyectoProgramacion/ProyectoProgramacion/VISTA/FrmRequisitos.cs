@@ -23,5 +23,6 @@ namespace ProyectoProgramacion.VISTA
             FrmMenu frm = new FrmMenu();
             frm.Show();
         }
+
     }
 }

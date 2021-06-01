@@ -47,19 +47,19 @@ namespace ProyectoProgramacion.VISTA
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(65, 12);
+            this.richTextBox1.Location = new System.Drawing.Point(29, 12);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(314, 350);
+            this.richTextBox1.Size = new System.Drawing.Size(350, 350);
             this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // richTextBox2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(407, 12);
+            this.richTextBox2.Location = new System.Drawing.Point(416, 12);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(314, 350);
+            this.richTextBox2.Size = new System.Drawing.Size(351, 350);
             this.richTextBox2.TabIndex = 2;
-            this.richTextBox2.Text = "";
+            this.richTextBox2.Text = resources.GetString("richTextBox2.Text");
             // 
             // FrmRequisitos
             // 

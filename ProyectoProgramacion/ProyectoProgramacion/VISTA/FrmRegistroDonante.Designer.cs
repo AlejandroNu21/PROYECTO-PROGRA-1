@@ -43,7 +43,7 @@ namespace ProyectoProgramacion.VISTA
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblId = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
-            this.txtNombreDonante = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtEdad = new System.Windows.Forms.TextBox();
             this.txtTelefono = new System.Windows.Forms.TextBox();
@@ -52,24 +52,26 @@ namespace ProyectoProgramacion.VISTA
             this.lblEdad = new System.Windows.Forms.Label();
             this.lblTelefono = new System.Windows.Forms.Label();
             this.lblGrupoSanguineo = new System.Windows.Forms.Label();
-            this.CmbGrupoSanguineo = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.cmbGrupoSanguineo = new System.Windows.Forms.ComboBox();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pctFoto = new System.Windows.Forms.PictureBox();
             this.btnbuscarfoto = new System.Windows.Forms.Button();
             this.btneliminarfoto = new System.Windows.Forms.Button();
             this.rdbmasculino = new System.Windows.Forms.RadioButton();
             this.rdbfemenino = new System.Windows.Forms.RadioButton();
             this.grpgenero = new System.Windows.Forms.GroupBox();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.drgregistrodonante)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctFoto)).BeginInit();
             this.grpgenero.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAceptarUsuario
             // 
-            this.btnAceptarUsuario.Location = new System.Drawing.Point(272, 402);
+            this.btnAceptarUsuario.Location = new System.Drawing.Point(484, 185);
             this.btnAceptarUsuario.Name = "btnAceptarUsuario";
             this.btnAceptarUsuario.Size = new System.Drawing.Size(112, 36);
             this.btnAceptarUsuario.TabIndex = 17;
@@ -79,7 +81,7 @@ namespace ProyectoProgramacion.VISTA
             // 
             // btnSalirUsuario
             // 
-            this.btnSalirUsuario.Location = new System.Drawing.Point(466, 402);
+            this.btnSalirUsuario.Location = new System.Drawing.Point(362, 319);
             this.btnSalirUsuario.Name = "btnSalirUsuario";
             this.btnSalirUsuario.Size = new System.Drawing.Size(112, 36);
             this.btnSalirUsuario.TabIndex = 18;
@@ -102,9 +104,9 @@ namespace ProyectoProgramacion.VISTA
             this.Column5,
             this.Column6,
             this.Column7});
-            this.drgregistrodonante.Location = new System.Drawing.Point(68, 246);
+            this.drgregistrodonante.Location = new System.Drawing.Point(458, 25);
             this.drgregistrodonante.Name = "drgregistrodonante";
-            this.drgregistrodonante.Size = new System.Drawing.Size(650, 150);
+            this.drgregistrodonante.Size = new System.Drawing.Size(402, 150);
             this.drgregistrodonante.TabIndex = 11;
             this.drgregistrodonante.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
@@ -165,13 +167,14 @@ namespace ProyectoProgramacion.VISTA
             this.txtId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
-            // txtNombreDonante
+            // txtNombre
             // 
-            this.txtNombreDonante.Location = new System.Drawing.Point(106, 51);
-            this.txtNombreDonante.Name = "txtNombreDonante";
-            this.txtNombreDonante.Size = new System.Drawing.Size(180, 20);
-            this.txtNombreDonante.TabIndex = 2;
-            this.txtNombreDonante.TextChanged += new System.EventHandler(this.txtNombreDonante_TextChanged);
+            this.txtNombre.Location = new System.Drawing.Point(106, 51);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(180, 20);
+            this.txtNombre.TabIndex = 2;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombreDonante_TextChanged);
+            this.txtNombre.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNombre_KeyDown);
             // 
             // txtDireccion
             // 
@@ -242,10 +245,10 @@ namespace ProyectoProgramacion.VISTA
             this.lblGrupoSanguineo.Text = "Grupo Sanguíneo:";
             this.lblGrupoSanguineo.Click += new System.EventHandler(this.lblGrupoSanguineo_Click);
             // 
-            // CmbGrupoSanguineo
+            // cmbGrupoSanguineo
             // 
-            this.CmbGrupoSanguineo.FormattingEnabled = true;
-            this.CmbGrupoSanguineo.Items.AddRange(new object[] {
+            this.cmbGrupoSanguineo.FormattingEnabled = true;
+            this.cmbGrupoSanguineo.Items.AddRange(new object[] {
             "A+",
             "A-",
             "B+",
@@ -254,31 +257,32 @@ namespace ProyectoProgramacion.VISTA
             "AB-",
             "O+",
             "O-"});
-            this.CmbGrupoSanguineo.Location = new System.Drawing.Point(106, 187);
-            this.CmbGrupoSanguineo.Name = "CmbGrupoSanguineo";
-            this.CmbGrupoSanguineo.Size = new System.Drawing.Size(121, 21);
-            this.CmbGrupoSanguineo.TabIndex = 6;
+            this.cmbGrupoSanguineo.Location = new System.Drawing.Point(106, 187);
+            this.cmbGrupoSanguineo.Name = "cmbGrupoSanguineo";
+            this.cmbGrupoSanguineo.Size = new System.Drawing.Size(121, 21);
+            this.cmbGrupoSanguineo.TabIndex = 6;
+            this.cmbGrupoSanguineo.Text = "Seleccionar";
             // 
-            // dateTimePicker1
+            // dtpFecha
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(647, 12);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(97, 20);
-            this.dateTimePicker1.TabIndex = 10;
+            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFecha.Location = new System.Drawing.Point(106, 214);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(97, 20);
+            this.dtpFecha.TabIndex = 10;
             // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // pictureBox1
+            // pctFoto
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(311, 25);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 150);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pctFoto.Location = new System.Drawing.Point(311, 25);
+            this.pctFoto.Name = "pctFoto";
+            this.pctFoto.Size = new System.Drawing.Size(150, 150);
+            this.pctFoto.TabIndex = 16;
+            this.pctFoto.TabStop = false;
+            this.pctFoto.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnbuscarfoto
             // 
@@ -288,6 +292,7 @@ namespace ProyectoProgramacion.VISTA
             this.btnbuscarfoto.TabIndex = 7;
             this.btnbuscarfoto.Text = "...";
             this.btnbuscarfoto.UseVisualStyleBackColor = true;
+            this.btnbuscarfoto.Click += new System.EventHandler(this.btnbuscarfoto_Click);
             // 
             // btneliminarfoto
             // 
@@ -297,6 +302,7 @@ namespace ProyectoProgramacion.VISTA
             this.btneliminarfoto.TabIndex = 8;
             this.btneliminarfoto.Text = "X";
             this.btneliminarfoto.UseVisualStyleBackColor = true;
+            this.btneliminarfoto.Click += new System.EventHandler(this.btneliminarfoto_Click);
             // 
             // rdbmasculino
             // 
@@ -324,24 +330,45 @@ namespace ProyectoProgramacion.VISTA
             // 
             this.grpgenero.Controls.Add(this.rdbfemenino);
             this.grpgenero.Controls.Add(this.rdbmasculino);
-            this.grpgenero.Location = new System.Drawing.Point(486, 58);
+            this.grpgenero.Location = new System.Drawing.Point(311, 214);
             this.grpgenero.Name = "grpgenero";
             this.grpgenero.Size = new System.Drawing.Size(115, 77);
             this.grpgenero.TabIndex = 9;
             this.grpgenero.TabStop = false;
             this.grpgenero.Text = "Genero";
             // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(602, 185);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(112, 36);
+            this.btnEliminar.TabIndex = 19;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Location = new System.Drawing.Point(720, 185);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(112, 36);
+            this.btnNuevo.TabIndex = 20;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.button2_Click);
+            // 
             // FrmRegistroDonante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(878, 374);
+            this.Controls.Add(this.btnNuevo);
+            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.grpgenero);
             this.Controls.Add(this.btneliminarfoto);
             this.Controls.Add(this.btnbuscarfoto);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.CmbGrupoSanguineo);
+            this.Controls.Add(this.pctFoto);
+            this.Controls.Add(this.dtpFecha);
+            this.Controls.Add(this.cmbGrupoSanguineo);
             this.Controls.Add(this.lblGrupoSanguineo);
             this.Controls.Add(this.lblTelefono);
             this.Controls.Add(this.lblEdad);
@@ -350,7 +377,7 @@ namespace ProyectoProgramacion.VISTA
             this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.txtEdad);
             this.Controls.Add(this.txtDireccion);
-            this.Controls.Add(this.txtNombreDonante);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.drgregistrodonante);
@@ -363,7 +390,7 @@ namespace ProyectoProgramacion.VISTA
             this.Load += new System.EventHandler(this.FrmRegistroUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.drgregistrodonante)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctFoto)).EndInit();
             this.grpgenero.ResumeLayout(false);
             this.grpgenero.PerformLayout();
             this.ResumeLayout(false);
@@ -378,7 +405,7 @@ namespace ProyectoProgramacion.VISTA
         private System.Windows.Forms.DataGridView drgregistrodonante;
         private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.TextBox txtId;
-        private System.Windows.Forms.TextBox txtNombreDonante;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.TextBox txtEdad;
         private System.Windows.Forms.TextBox txtTelefono;
@@ -387,10 +414,10 @@ namespace ProyectoProgramacion.VISTA
         private System.Windows.Forms.Label lblEdad;
         private System.Windows.Forms.Label lblTelefono;
         private System.Windows.Forms.Label lblGrupoSanguineo;
-        private System.Windows.Forms.ComboBox CmbGrupoSanguineo;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox cmbGrupoSanguineo;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pctFoto;
         private System.Windows.Forms.Button btneliminarfoto;
         private System.Windows.Forms.Button btnbuscarfoto;
         private System.Windows.Forms.GroupBox grpgenero;
@@ -403,5 +430,7 @@ namespace ProyectoProgramacion.VISTA
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Button btnEliminar;
     }
 }

@@ -27,7 +27,7 @@ namespace ProyectoProgramacion.VISTA
 
         void Clear()
         {
-            txtNombreDonante.Clear();
+            txtNombre.Clear();
         }
 
         private void FrmRegistroUsuario_Load(object sender, EventArgs e)
@@ -67,11 +67,11 @@ namespace ProyectoProgramacion.VISTA
 
 
             txtId.Text = Id;
-            txtNombreDonante.Text = NombreDonante;
+            txtNombre.Text = NombreDonante;
             txtDireccion.Text = Direccion;
             txtTelefono.Text = Telefono;
             txtEdad.Text = Edad;
-            CmbGrupoSanguineo.Text = GrupoSanguineo;
+            cmbGrupoSanguineo.Text = GrupoSanguineo;
         }
 
         private void btnAceptarUsuario_Click(object sender, EventArgs e)
@@ -81,11 +81,11 @@ namespace ProyectoProgramacion.VISTA
                 {
                     Tbl_UserList1 userList = new Tbl_UserList1();
 
-                    userList.NombreDonante = txtNombreDonante.Text;
+                    userList.NombreDonante = txtNombre.Text;
                     userList.Direccion = txtDireccion.Text;
                     userList.Edad = Convert.ToInt32(txtEdad.Text);
                     userList.Telefono = Convert.ToInt32(txtTelefono.Text);
-                    userList.GrupoSanguineo = CmbGrupoSanguineo.Text;
+                    userList.GrupoSanguineo = cmbGrupoSanguineo.Text;
                     db.Tbl_UserList1.Add(userList);
                     db.SaveChanges();
                 }
@@ -125,6 +125,47 @@ namespace ProyectoProgramacion.VISTA
 
         private class Public
         {
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            txtId.Text = 0000
+            txtNombre.Clear()
+            txtEdad.Clear()
+            txtDireccion.Clear()
+            txtTelefono.Clear()
+            cmbGrupoSanguineo.Text = "Seleccionar"
+            pctFoto.Image= Clear()
+            rdbMasculino.Checked = true
+            rdbFemenino.Checked = false
+
+            txtNombre.Focus()
+        }
+
+        private void btneliminarfoto_Click(object sender, EventArgs e)
+        {
+            pctFoto.Image= Clear()
+        }
+
+        private void btnbuscarfoto_Click(object sender, EventArgs e)
+        {
+        Dim AbrirArchivo as new OpenFileDialog
+        AbrirArchivo.Filter= "Imagenes jpg|*.jpg"
+        AbrirArchivo.ShowDialog()
+
+
+        if AbrirArchivo.FileName <> ""
+        ptcFoto.Image=Image.FromFile(AbrirArchivo.FileName)
+        End if
+        
+        }
+
+        private void txtNombre_KeyDown(object sender, KeyEventArgs e)
+        {
+            if e.KeyCode = Keys.Enter Then
+                txtEdad.Focus()
+             End if
+
         }
     }
 }
