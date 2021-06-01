@@ -33,14 +33,15 @@ namespace ProyectoProgramacion.VISTA
             this.label1 = new System.Windows.Forms.Label();
             this.txtDonanteaBuscar = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnEliminarBDonante = new System.Windows.Forms.Button();
+            this.btnSalirBDonante = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnEliminarBDonante = new System.Windows.Forms.Button();
-            this.btnSalirBDonante = new System.Windows.Forms.Button();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,11 +74,31 @@ namespace ProyectoProgramacion.VISTA
             this.Column3,
             this.Column4,
             this.Column5,
-            this.Column6});
+            this.Column6,
+            this.Column7});
             this.dataGridView1.Location = new System.Drawing.Point(61, 137);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(600, 150);
             this.dataGridView1.TabIndex = 2;
+            // 
+            // btnEliminarBDonante
+            // 
+            this.btnEliminarBDonante.Location = new System.Drawing.Point(221, 308);
+            this.btnEliminarBDonante.Name = "btnEliminarBDonante";
+            this.btnEliminarBDonante.Size = new System.Drawing.Size(117, 39);
+            this.btnEliminarBDonante.TabIndex = 3;
+            this.btnEliminarBDonante.Text = "ELIMINAR";
+            this.btnEliminarBDonante.UseVisualStyleBackColor = true;
+            // 
+            // btnSalirBDonante
+            // 
+            this.btnSalirBDonante.Location = new System.Drawing.Point(375, 308);
+            this.btnSalirBDonante.Name = "btnSalirBDonante";
+            this.btnSalirBDonante.Size = new System.Drawing.Size(117, 39);
+            this.btnSalirBDonante.TabIndex = 4;
+            this.btnSalirBDonante.Text = "SALIR";
+            this.btnSalirBDonante.UseVisualStyleBackColor = true;
+            this.btnSalirBDonante.Click += new System.EventHandler(this.btnSalirBDonante_Click);
             // 
             // Column1
             // 
@@ -109,24 +130,10 @@ namespace ProyectoProgramacion.VISTA
             this.Column6.HeaderText = "Grupo Sanguineo";
             this.Column6.Name = "Column6";
             // 
-            // btnEliminarBDonante
+            // Column7
             // 
-            this.btnEliminarBDonante.Location = new System.Drawing.Point(221, 308);
-            this.btnEliminarBDonante.Name = "btnEliminarBDonante";
-            this.btnEliminarBDonante.Size = new System.Drawing.Size(117, 39);
-            this.btnEliminarBDonante.TabIndex = 3;
-            this.btnEliminarBDonante.Text = "ELIMINAR";
-            this.btnEliminarBDonante.UseVisualStyleBackColor = true;
-            // 
-            // btnSalirBDonante
-            // 
-            this.btnSalirBDonante.Location = new System.Drawing.Point(375, 308);
-            this.btnSalirBDonante.Name = "btnSalirBDonante";
-            this.btnSalirBDonante.Size = new System.Drawing.Size(117, 39);
-            this.btnSalirBDonante.TabIndex = 4;
-            this.btnSalirBDonante.Text = "SALIR";
-            this.btnSalirBDonante.UseVisualStyleBackColor = true;
-            this.btnSalirBDonante.Click += new System.EventHandler(this.btnSalirBDonante_Click);
+            this.Column7.HeaderText = "Género";
+            this.Column7.Name = "Column7";
             // 
             // FrmBuscarDonante
             // 
@@ -161,5 +168,6 @@ namespace ProyectoProgramacion.VISTA
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
     }
 }

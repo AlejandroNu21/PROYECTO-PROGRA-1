@@ -11,15 +11,17 @@ using System.Windows.Forms;
 
 namespace ProyectoProgramacion.VISTA
 {
-    public partial class FrmRegistroUsuario : Form
+    public partial class FrmRegistroDonante : Form
     {
-        public FrmRegistroUsuario()
+        public object Dim { get; private set; }
+
+        public FrmRegistroDonante()
         {
             InitializeComponent();
         }
         void Carga()
         {
-            dataGridView1.Rows.Clear();
+            drgregistrodonante.Rows.Clear();
 
         }
 
@@ -31,16 +33,17 @@ namespace ProyectoProgramacion.VISTA
         private void FrmRegistroUsuario_Load(object sender, EventArgs e)
         {
             using (DATOSPROYECTOEntities db = new DATOSPROYECTOEntities())
+
+            
             {
                 var Lista = db.Tbl_UserList1.ToList();
 
                 foreach (var iteracion in Lista)
                 {
                     btnAceptarUsuario.Enabled = false;
-                    dataGridView1.Rows.Add(iteracion.Id, iteracion.NombreDonante, iteracion.Direccion, iteracion.Telefono, iteracion.Edad, iteracion.GrupoSanguineo);
+                    drgregistrodonante.Rows.Add(iteracion.Id, iteracion.NombreDonante, iteracion.Direccion, iteracion.Telefono, iteracion.Edad, iteracion.GrupoSanguineo);
                 }
-            }
-
+            }            
         }
 
 
@@ -55,12 +58,12 @@ namespace ProyectoProgramacion.VISTA
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            String Id = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            String NombreDonante = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            String Direccion = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            String Telefono = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-            String Edad = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-            String GrupoSanguineo = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+            String Id = drgregistrodonante.CurrentRow.Cells[0].Value.ToString();
+            String NombreDonante = drgregistrodonante.CurrentRow.Cells[1].Value.ToString();
+            String Direccion = drgregistrodonante.CurrentRow.Cells[2].Value.ToString();
+            String Telefono = drgregistrodonante.CurrentRow.Cells[3].Value.ToString();
+            String Edad = drgregistrodonante.CurrentRow.Cells[4].Value.ToString();
+            String GrupoSanguineo = drgregistrodonante.CurrentRow.Cells[5].Value.ToString();
 
 
             txtId.Text = Id;
@@ -93,6 +96,35 @@ namespace ProyectoProgramacion.VISTA
         private void txtNombreDonante_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void lblId_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblDireccion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblGrupoSanguineo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private class Public
+        {
         }
     }
 }

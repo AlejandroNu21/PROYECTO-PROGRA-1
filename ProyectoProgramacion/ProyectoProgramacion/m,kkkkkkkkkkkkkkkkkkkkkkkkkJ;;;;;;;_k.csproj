@@ -98,11 +98,11 @@
     <Compile Include="VISTA\FrmPorqueDonar.Designer.cs">
       <DependentUpon>FrmPorqueDonar.cs</DependentUpon>
     </Compile>
-    <Compile Include="VISTA\FrmRegistroUsuario.cs">
+    <Compile Include="VISTA\FrmRegistroDonante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VISTA\FrmRegistroUsuario.Designer.cs">
-      <DependentUpon>FrmRegistroUsuario.cs</DependentUpon>
+    <Compile Include="VISTA\FrmRegistroDonante.Designer.cs">
+      <DependentUpon>FrmRegistroDonante.cs</DependentUpon>
     </Compile>
     <Compile Include="VISTA\FrmRequisitos.cs">
       <SubType>Form</SubType>
@@ -151,22 +151,16 @@
     <EmbeddedResource Include="VISTA\FrmPorqueDonar.resx">
       <DependentUpon>FrmPorqueDonar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VISTA\FrmRegistroUsuario.resx">
-      <DependentUpon>FrmRegistroUsuario.cs</DependentUpon>
+    <EmbeddedResource Include="VISTA\FrmRegistroDonante.resx">
+      <DependentUpon>FrmRegistroDonante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VISTA\FrmRequisitos.resx">
       <DependentUpon>FrmRequisitos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EntityDeploy Include="MODEL\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
@@ -199,6 +193,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\donacionsangre.jpg" />
     <None Include="Resources\gota1.png" />
     <None Include="Resources\Exit.jpg" />
     <None Include="Resources\0sagree.gif" />

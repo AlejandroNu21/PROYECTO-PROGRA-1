@@ -68,7 +68,7 @@ namespace ProyectoProgramacion.VISTA
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::ProyectoProgramacion.Properties.Resources.portadadonasangre;
+            
             this.pictureBox1.Location = new System.Drawing.Point(114, 47);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(329, 151);

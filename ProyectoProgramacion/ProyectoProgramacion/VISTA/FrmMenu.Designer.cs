@@ -39,9 +39,7 @@ namespace ProyectoProgramacion.VISTA
             this.iNFORMACIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.requisitosParaDonacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.porqueDonarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSalirMenu
@@ -149,16 +147,6 @@ namespace ProyectoProgramacion.VISTA
             this.porqueDonarToolStripMenuItem.Text = "Porque Donar?";
             this.porqueDonarToolStripMenuItem.Click += new System.EventHandler(this.porqueDonarToolStripMenuItem_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ProyectoProgramacion.Properties.Resources._gota_sangre;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 351);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(172, 99);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,7 +157,6 @@ namespace ProyectoProgramacion.VISTA
             this.Controls.Add(this.btnBuscarDonante);
             this.Controls.Add(this.btnAgendarCita);
             this.Controls.Add(this.btnRUsuario);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnSalirMenu);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -180,7 +167,6 @@ namespace ProyectoProgramacion.VISTA
             this.Load += new System.EventHandler(this.FrmMenu_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,7 +175,6 @@ namespace ProyectoProgramacion.VISTA
         #endregion
 
         private System.Windows.Forms.Button btnSalirMenu;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnRUsuario;
         private System.Windows.Forms.Button btnAgendarCita;
         private System.Windows.Forms.Button btnBuscarDonante;

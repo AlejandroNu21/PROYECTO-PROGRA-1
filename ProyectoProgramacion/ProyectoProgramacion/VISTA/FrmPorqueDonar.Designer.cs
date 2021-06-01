@@ -52,15 +52,15 @@ namespace ProyectoProgramacion.VISTA
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(547, 257);
             this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "";
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::ProyectoProgramacion.Properties.Resources._0sagree;
             this.pictureBox1.Location = new System.Drawing.Point(12, 301);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(135, 107);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 

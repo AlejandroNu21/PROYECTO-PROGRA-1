@@ -26,7 +26,7 @@ namespace ProyectoProgramacion.VISTA
 
         private void btnRUsuario_Click(object sender, EventArgs e)
         {
-            FrmRegistroUsuario Donante = new FrmRegistroUsuario();
+            FrmRegistroDonante Donante = new FrmRegistroDonante();
             Donante.Show();
             this.Hide();
         }
