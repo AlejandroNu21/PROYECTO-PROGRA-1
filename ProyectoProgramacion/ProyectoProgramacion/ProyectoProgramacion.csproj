@@ -55,18 +55,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Donante.cs" />
     <Compile Include="DAO\Cls1.cs" />
     <Compile Include="VISTA\FrmCompatibilidadSanguinea.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="VISTA\FrmCompatibilidadSanguinea.Designer.cs">
       <DependentUpon>FrmCompatibilidadSanguinea.cs</DependentUpon>
-    </Compile>
-    <Compile Include="VISTA\FrmAgendarCita1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="VISTA\FrmAgendarCita1.Designer.cs">
-      <DependentUpon>FrmAgendarCita1.cs</DependentUpon>
     </Compile>
     <Compile Include="VISTA\FrmAgendarCitas2.cs">
       <SubType>Form</SubType>
@@ -132,9 +127,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="VISTA\FrmCompatibilidadSanguinea.resx">
       <DependentUpon>FrmCompatibilidadSanguinea.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="VISTA\FrmAgendarCita1.resx">
-      <DependentUpon>FrmAgendarCita1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VISTA\FrmAgendarCitas2.resx">
       <DependentUpon>FrmAgendarCitas2.cs</DependentUpon>

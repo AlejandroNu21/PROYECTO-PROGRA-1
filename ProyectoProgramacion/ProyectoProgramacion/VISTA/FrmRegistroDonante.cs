@@ -21,7 +21,7 @@ namespace ProyectoProgramacion.VISTA
         }
         void Carga()
         {
-            drgregistrodonante.Rows.Clear();
+            dgvregistrodonante.Rows.Clear();
 
         }
 
@@ -41,7 +41,7 @@ namespace ProyectoProgramacion.VISTA
                 foreach (var iteracion in Lista)
                 {
                     btnAceptarUsuario.Enabled = false;
-                    drgregistrodonante.Rows.Add(iteracion.Id, iteracion.NombreDonante, iteracion.Direccion, iteracion.Telefono, iteracion.Edad, iteracion.GrupoSanguineo);
+                    dgvregistrodonante.Rows.Add(iteracion.Id, iteracion.NombreDonante, iteracion.Direccion, iteracion.Telefono, iteracion.Edad, iteracion.GrupoSanguineo);
                 }
             }            
         }
@@ -58,20 +58,22 @@ namespace ProyectoProgramacion.VISTA
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            String Id = drgregistrodonante.CurrentRow.Cells[0].Value.ToString();
-            String NombreDonante = drgregistrodonante.CurrentRow.Cells[1].Value.ToString();
-            String Direccion = drgregistrodonante.CurrentRow.Cells[2].Value.ToString();
-            String Telefono = drgregistrodonante.CurrentRow.Cells[3].Value.ToString();
-            String Edad = drgregistrodonante.CurrentRow.Cells[4].Value.ToString();
-            String GrupoSanguineo = drgregistrodonante.CurrentRow.Cells[5].Value.ToString();
+            String Id = dgvregistrodonante.CurrentRow.Cells[0].Value.ToString();
+            String NombreDonante = dgvregistrodonante.CurrentRow.Cells[1].Value.ToString();
+            String Dirección = dgvregistrodonante.CurrentRow.Cells[2].Value.ToString();
+            String Teléfono = dgvregistrodonante.CurrentRow.Cells[3].Value.ToString();
+            String Edad = dgvregistrodonante.CurrentRow.Cells[4].Value.ToString();
+            String GrupoSanguíneo = dgvregistrodonante.CurrentRow.Cells[5].Value.ToString();
+            String Género = dgvregistrodonante.CurrentRow.Value().ToString();
 
 
             txtId.Text = Id;
             txtNombre.Text = NombreDonante;
-            txtDireccion.Text = Direccion;
-            txtTelefono.Text = Telefono;
+            txtDirección.Text = Dirección;
+            txtTeléfono.Text = Teléfono;
             txtEdad.Text = Edad;
-            cmbGrupoSanguineo.Text = GrupoSanguineo;
+            cmbGrupoSanguíneo.Text = GrupoSanguíneo;
+            
         }
 
         private void btnAceptarUsuario_Click(object sender, EventArgs e)
@@ -134,7 +136,7 @@ namespace ProyectoProgramacion.VISTA
             txtEdad.Clear()
             txtDireccion.Clear()
             txtTelefono.Clear()
-            cmbGrupoSanguineo.Text = "Seleccionar"
+            cmbGrupoSanguineo.Text = " Seleccionar "
             pctFoto.Image= Clear()
             rdbMasculino.Checked = true
             rdbFemenino.Checked = false

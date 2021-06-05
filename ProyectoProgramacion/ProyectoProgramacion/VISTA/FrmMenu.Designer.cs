@@ -65,7 +65,7 @@ namespace ProyectoProgramacion.VISTA
             this.btnRUsuario.Location = new System.Drawing.Point(157, 57);
             this.btnRUsuario.Name = "btnRUsuario";
             this.btnRUsuario.Size = new System.Drawing.Size(125, 41);
-            this.btnRUsuario.TabIndex = 4;
+            this.btnRUsuario.TabIndex = 1;
             this.btnRUsuario.Text = "Registrar Usuario";
             this.btnRUsuario.UseVisualStyleBackColor = false;
             this.btnRUsuario.Click += new System.EventHandler(this.btnRUsuario_Click);
@@ -79,7 +79,7 @@ namespace ProyectoProgramacion.VISTA
             this.btnAgendarCita.Location = new System.Drawing.Point(157, 135);
             this.btnAgendarCita.Name = "btnAgendarCita";
             this.btnAgendarCita.Size = new System.Drawing.Size(125, 41);
-            this.btnAgendarCita.TabIndex = 5;
+            this.btnAgendarCita.TabIndex = 2;
             this.btnAgendarCita.Text = "Agendar Cita";
             this.btnAgendarCita.UseVisualStyleBackColor = false;
             this.btnAgendarCita.Click += new System.EventHandler(this.btnAgendarCita_Click);
@@ -93,7 +93,7 @@ namespace ProyectoProgramacion.VISTA
             this.btnBuscarDonante.Location = new System.Drawing.Point(157, 204);
             this.btnBuscarDonante.Name = "btnBuscarDonante";
             this.btnBuscarDonante.Size = new System.Drawing.Size(125, 41);
-            this.btnBuscarDonante.TabIndex = 6;
+            this.btnBuscarDonante.TabIndex = 3;
             this.btnBuscarDonante.Text = "Buscar Donante";
             this.btnBuscarDonante.UseVisualStyleBackColor = false;
             this.btnBuscarDonante.Click += new System.EventHandler(this.btnBuscarDonante_Click);
@@ -107,7 +107,7 @@ namespace ProyectoProgramacion.VISTA
             this.btnCompatibilidadSanguinea.Location = new System.Drawing.Point(157, 274);
             this.btnCompatibilidadSanguinea.Name = "btnCompatibilidadSanguinea";
             this.btnCompatibilidadSanguinea.Size = new System.Drawing.Size(125, 41);
-            this.btnCompatibilidadSanguinea.TabIndex = 7;
+            this.btnCompatibilidadSanguinea.TabIndex = 4;
             this.btnCompatibilidadSanguinea.Text = "Compatibilidad Sanguinea";
             this.btnCompatibilidadSanguinea.UseVisualStyleBackColor = false;
             this.btnCompatibilidadSanguinea.Click += new System.EventHandler(this.btnCompatibilidadSanguinea_Click);
@@ -121,7 +121,7 @@ namespace ProyectoProgramacion.VISTA
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(109, 24);
-            this.menuStrip1.TabIndex = 8;
+            this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // iNFORMACIONToolStripMenuItem

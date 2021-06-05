@@ -4,12 +4,12 @@ Use DATOSPROYECTO;
 Go
 
 Create Table Donantes1 (Id_Donante int primary key identity,
-Nombre varchar(50) not null,
+Nombre nvarchar(50) not null,
 Edad int,
-Dirección varchar(50),
-Teléfono int,
-GrupoSanguíneo varchar(10),
-Genero varchar(10),
+Dirección nvarchar(25),
+Teléfono nvarchar(8),
+GrupoSanguíneo nvarchar(5),
+Género nvarchar(10),
 )
 Create Table Cuenta
 (Id_Cuenta int primary key,

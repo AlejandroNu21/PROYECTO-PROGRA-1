@@ -33,7 +33,7 @@ namespace ProyectoProgramacion.VISTA
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistroDonante));
             this.btnAceptarUsuario = new System.Windows.Forms.Button();
             this.btnSalirUsuario = new System.Windows.Forms.Button();
-            this.drgregistrodonante = new System.Windows.Forms.DataGridView();
+            this.dgvregistrodonante = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,7 +63,7 @@ namespace ProyectoProgramacion.VISTA
             this.grpgenero = new System.Windows.Forms.GroupBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.drgregistrodonante)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvregistrodonante)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctFoto)).BeginInit();
             this.grpgenero.SuspendLayout();
@@ -74,29 +74,29 @@ namespace ProyectoProgramacion.VISTA
             this.btnAceptarUsuario.Location = new System.Drawing.Point(484, 185);
             this.btnAceptarUsuario.Name = "btnAceptarUsuario";
             this.btnAceptarUsuario.Size = new System.Drawing.Size(112, 36);
-            this.btnAceptarUsuario.TabIndex = 17;
+            this.btnAceptarUsuario.TabIndex = 10;
             this.btnAceptarUsuario.Text = "Aceptar";
             this.btnAceptarUsuario.UseVisualStyleBackColor = true;
             this.btnAceptarUsuario.Click += new System.EventHandler(this.btnAceptarUsuario_Click);
             // 
             // btnSalirUsuario
             // 
-            this.btnSalirUsuario.Location = new System.Drawing.Point(362, 319);
+            this.btnSalirUsuario.Location = new System.Drawing.Point(377, 313);
             this.btnSalirUsuario.Name = "btnSalirUsuario";
             this.btnSalirUsuario.Size = new System.Drawing.Size(112, 36);
-            this.btnSalirUsuario.TabIndex = 18;
+            this.btnSalirUsuario.TabIndex = 0;
             this.btnSalirUsuario.Text = "SALIR";
             this.btnSalirUsuario.UseVisualStyleBackColor = true;
             this.btnSalirUsuario.Click += new System.EventHandler(this.btnSalirUsuario_Click);
             // 
-            // drgregistrodonante
+            // dgvregistrodonante
             // 
-            this.drgregistrodonante.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvregistrodonante.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.drgregistrodonante.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.drgregistrodonante.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.drgregistrodonante.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvregistrodonante.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvregistrodonante.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvregistrodonante.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
@@ -104,11 +104,11 @@ namespace ProyectoProgramacion.VISTA
             this.Column5,
             this.Column6,
             this.Column7});
-            this.drgregistrodonante.Location = new System.Drawing.Point(458, 25);
-            this.drgregistrodonante.Name = "drgregistrodonante";
-            this.drgregistrodonante.Size = new System.Drawing.Size(402, 150);
-            this.drgregistrodonante.TabIndex = 11;
-            this.drgregistrodonante.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+            this.dgvregistrodonante.Location = new System.Drawing.Point(458, 25);
+            this.dgvregistrodonante.Name = "dgvregistrodonante";
+            this.dgvregistrodonante.Size = new System.Drawing.Size(402, 150);
+            this.dgvregistrodonante.TabIndex = 13;
+            this.dgvregistrodonante.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // Column1
             // 
@@ -151,7 +151,7 @@ namespace ProyectoProgramacion.VISTA
             this.lblId.Location = new System.Drawing.Point(81, 32);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(19, 13);
-            this.lblId.TabIndex = 7;
+            this.lblId.TabIndex = 20;
             this.lblId.Text = "Id:";
             this.lblId.Click += new System.EventHandler(this.lblId_Click);
             // 
@@ -204,7 +204,7 @@ namespace ProyectoProgramacion.VISTA
             this.lblNombreDonante.Location = new System.Drawing.Point(53, 58);
             this.lblNombreDonante.Name = "lblNombreDonante";
             this.lblNombreDonante.Size = new System.Drawing.Size(47, 13);
-            this.lblNombreDonante.TabIndex = 16;
+            this.lblNombreDonante.TabIndex = 19;
             this.lblNombreDonante.Text = "Nombre:";
             // 
             // lblDireccion
@@ -213,7 +213,7 @@ namespace ProyectoProgramacion.VISTA
             this.lblDireccion.Location = new System.Drawing.Point(48, 106);
             this.lblDireccion.Name = "lblDireccion";
             this.lblDireccion.Size = new System.Drawing.Size(55, 13);
-            this.lblDireccion.TabIndex = 14;
+            this.lblDireccion.TabIndex = 17;
             this.lblDireccion.Text = "Dirección:";
             this.lblDireccion.Click += new System.EventHandler(this.lblDireccion_Click);
             // 
@@ -223,7 +223,7 @@ namespace ProyectoProgramacion.VISTA
             this.lblEdad.Location = new System.Drawing.Point(65, 84);
             this.lblEdad.Name = "lblEdad";
             this.lblEdad.Size = new System.Drawing.Size(35, 13);
-            this.lblEdad.TabIndex = 15;
+            this.lblEdad.TabIndex = 18;
             this.lblEdad.Text = "Edad:";
             // 
             // lblTelefono
@@ -232,7 +232,7 @@ namespace ProyectoProgramacion.VISTA
             this.lblTelefono.Location = new System.Drawing.Point(51, 163);
             this.lblTelefono.Name = "lblTelefono";
             this.lblTelefono.Size = new System.Drawing.Size(52, 13);
-            this.lblTelefono.TabIndex = 13;
+            this.lblTelefono.TabIndex = 16;
             this.lblTelefono.Text = "Teléfono:";
             // 
             // lblGrupoSanguineo
@@ -241,7 +241,7 @@ namespace ProyectoProgramacion.VISTA
             this.lblGrupoSanguineo.Location = new System.Drawing.Point(7, 195);
             this.lblGrupoSanguineo.Name = "lblGrupoSanguineo";
             this.lblGrupoSanguineo.Size = new System.Drawing.Size(95, 13);
-            this.lblGrupoSanguineo.TabIndex = 12;
+            this.lblGrupoSanguineo.TabIndex = 15;
             this.lblGrupoSanguineo.Text = "Grupo Sanguíneo:";
             this.lblGrupoSanguineo.Click += new System.EventHandler(this.lblGrupoSanguineo_Click);
             // 
@@ -269,7 +269,7 @@ namespace ProyectoProgramacion.VISTA
             this.dtpFecha.Location = new System.Drawing.Point(106, 214);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(97, 20);
-            this.dtpFecha.TabIndex = 10;
+            this.dtpFecha.TabIndex = 14;
             // 
             // errorProvider1
             // 
@@ -286,11 +286,11 @@ namespace ProyectoProgramacion.VISTA
             // 
             // btnbuscarfoto
             // 
-            this.btnbuscarfoto.Location = new System.Drawing.Point(376, 185);
+            this.btnbuscarfoto.Location = new System.Drawing.Point(362, 185);
             this.btnbuscarfoto.Name = "btnbuscarfoto";
-            this.btnbuscarfoto.Size = new System.Drawing.Size(30, 23);
+            this.btnbuscarfoto.Size = new System.Drawing.Size(44, 23);
             this.btnbuscarfoto.TabIndex = 7;
-            this.btnbuscarfoto.Text = "...";
+            this.btnbuscarfoto.Text = "Agg";
             this.btnbuscarfoto.UseVisualStyleBackColor = true;
             this.btnbuscarfoto.Click += new System.EventHandler(this.btnbuscarfoto_Click);
             // 
@@ -298,7 +298,7 @@ namespace ProyectoProgramacion.VISTA
             // 
             this.btneliminarfoto.Location = new System.Drawing.Point(421, 185);
             this.btneliminarfoto.Name = "btneliminarfoto";
-            this.btneliminarfoto.Size = new System.Drawing.Size(30, 23);
+            this.btneliminarfoto.Size = new System.Drawing.Size(40, 23);
             this.btneliminarfoto.TabIndex = 8;
             this.btneliminarfoto.Text = "X";
             this.btneliminarfoto.UseVisualStyleBackColor = true;
@@ -342,7 +342,7 @@ namespace ProyectoProgramacion.VISTA
             this.btnEliminar.Location = new System.Drawing.Point(602, 185);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(112, 36);
-            this.btnEliminar.TabIndex = 19;
+            this.btnEliminar.TabIndex = 11;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
             // 
@@ -351,7 +351,7 @@ namespace ProyectoProgramacion.VISTA
             this.btnNuevo.Location = new System.Drawing.Point(720, 185);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(112, 36);
-            this.btnNuevo.TabIndex = 20;
+            this.btnNuevo.TabIndex = 12;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.button2_Click);
@@ -380,15 +380,15 @@ namespace ProyectoProgramacion.VISTA
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.lblId);
-            this.Controls.Add(this.drgregistrodonante);
+            this.Controls.Add(this.dgvregistrodonante);
             this.Controls.Add(this.btnSalirUsuario);
             this.Controls.Add(this.btnAceptarUsuario);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmRegistroDonante";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Registro de Usuario";
+            this.Text = "Registro Donante";
             this.Load += new System.EventHandler(this.FrmRegistroUsuario_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.drgregistrodonante)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvregistrodonante)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctFoto)).EndInit();
             this.grpgenero.ResumeLayout(false);
@@ -402,7 +402,7 @@ namespace ProyectoProgramacion.VISTA
 
         private System.Windows.Forms.Button btnAceptarUsuario;
         private System.Windows.Forms.Button btnSalirUsuario;
-        private System.Windows.Forms.DataGridView drgregistrodonante;
+        private System.Windows.Forms.DataGridView dgvregistrodonante;
         private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.TextBox txtNombre;
