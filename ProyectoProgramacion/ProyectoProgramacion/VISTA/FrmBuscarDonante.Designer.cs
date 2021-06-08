@@ -48,11 +48,12 @@ namespace ProyectoProgramacion.VISTA
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(298, 47);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(281, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 13);
+            this.label1.Size = new System.Drawing.Size(184, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Ingrese Donante a Buscar";
+            this.label1.Text = "Ingrese Nombre a Buscar";
             // 
             // txtDonanteaBuscar
             // 
@@ -107,17 +108,17 @@ namespace ProyectoProgramacion.VISTA
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "Nombre Donante";
+            this.Column2.HeaderText = "Nombre";
             this.Column2.Name = "Column2";
             // 
             // Column3
             // 
-            this.Column3.HeaderText = "Direccion";
+            this.Column3.HeaderText = "Dirección";
             this.Column3.Name = "Column3";
             // 
             // Column4
             // 
-            this.Column4.HeaderText = "Telefono";
+            this.Column4.HeaderText = "Teléfono";
             this.Column4.Name = "Column4";
             // 
             // Column5
@@ -127,7 +128,7 @@ namespace ProyectoProgramacion.VISTA
             // 
             // Column6
             // 
-            this.Column6.HeaderText = "Grupo Sanguineo";
+            this.Column6.HeaderText = "Grupo Sanguíneo";
             this.Column6.Name = "Column6";
             // 
             // Column7

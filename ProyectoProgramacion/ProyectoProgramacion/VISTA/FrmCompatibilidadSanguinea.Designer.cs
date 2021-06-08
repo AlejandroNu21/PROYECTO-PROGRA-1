@@ -43,9 +43,9 @@ namespace ProyectoProgramacion.VISTA
             // 
             // btnSalirTipoSangre
             // 
-            this.btnSalirTipoSangre.Location = new System.Drawing.Point(478, 362);
+            this.btnSalirTipoSangre.Location = new System.Drawing.Point(478, 356);
             this.btnSalirTipoSangre.Name = "btnSalirTipoSangre";
-            this.btnSalirTipoSangre.Size = new System.Drawing.Size(108, 36);
+            this.btnSalirTipoSangre.Size = new System.Drawing.Size(108, 42);
             this.btnSalirTipoSangre.TabIndex = 0;
             this.btnSalirTipoSangre.Text = "SALIR";
             this.btnSalirTipoSangre.UseVisualStyleBackColor = true;
@@ -70,9 +70,10 @@ namespace ProyectoProgramacion.VISTA
             // lblTipoSangre
             // 
             this.lblTipoSangre.AutoSize = true;
-            this.lblTipoSangre.Location = new System.Drawing.Point(134, 40);
+            this.lblTipoSangre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoSangre.Location = new System.Drawing.Point(86, 41);
             this.lblTipoSangre.Name = "lblTipoSangre";
-            this.lblTipoSangre.Size = new System.Drawing.Size(118, 13);
+            this.lblTipoSangre.Size = new System.Drawing.Size(172, 16);
             this.lblTipoSangre.TabIndex = 2;
             this.lblTipoSangre.Text = "Ingrese Tipo de Sangre";
             // 
@@ -88,16 +89,16 @@ namespace ProyectoProgramacion.VISTA
             "AB-",
             "O+",
             "O-"});
-            this.CmbTipoSangre.Location = new System.Drawing.Point(137, 82);
+            this.CmbTipoSangre.Location = new System.Drawing.Point(89, 82);
             this.CmbTipoSangre.Name = "CmbTipoSangre";
-            this.CmbTipoSangre.Size = new System.Drawing.Size(121, 21);
+            this.CmbTipoSangre.Size = new System.Drawing.Size(169, 21);
             this.CmbTipoSangre.TabIndex = 3;
             // 
             // btnCompatibilidadSanguinea
             // 
-            this.btnCompatibilidadSanguinea.Location = new System.Drawing.Point(302, 82);
+            this.btnCompatibilidadSanguinea.Location = new System.Drawing.Point(300, 103);
             this.btnCompatibilidadSanguinea.Name = "btnCompatibilidadSanguinea";
-            this.btnCompatibilidadSanguinea.Size = new System.Drawing.Size(75, 23);
+            this.btnCompatibilidadSanguinea.Size = new System.Drawing.Size(79, 27);
             this.btnCompatibilidadSanguinea.TabIndex = 4;
             this.btnCompatibilidadSanguinea.Text = "BUSCAR";
             this.btnCompatibilidadSanguinea.UseVisualStyleBackColor = true;
@@ -114,7 +115,7 @@ namespace ProyectoProgramacion.VISTA
             // 
             // Column3
             // 
-            this.Column3.HeaderText = "Grupo Sanguineo";
+            this.Column3.HeaderText = "Grupo Sanguíneo";
             this.Column3.Name = "Column3";
             // 
             // FrmCompatibilidadSanguinea

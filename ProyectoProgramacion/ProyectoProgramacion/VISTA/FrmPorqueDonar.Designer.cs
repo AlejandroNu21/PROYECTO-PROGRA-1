@@ -31,9 +31,7 @@ namespace ProyectoProgramacion.VISTA
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPorqueDonar));
             this.btnSalirPDonar = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.rtbporquedonar = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // btnSalirPDonar
@@ -46,45 +44,35 @@ namespace ProyectoProgramacion.VISTA
             this.btnSalirPDonar.UseVisualStyleBackColor = true;
             this.btnSalirPDonar.Click += new System.EventHandler(this.btnSalirPDonar_Click);
             // 
-            // richTextBox1
+            // rtbporquedonar
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(133, 27);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(547, 257);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 301);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(135, 107);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.rtbporquedonar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.rtbporquedonar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbporquedonar.ForeColor = System.Drawing.Color.Black;
+            this.rtbporquedonar.Location = new System.Drawing.Point(133, 27);
+            this.rtbporquedonar.Name = "rtbporquedonar";
+            this.rtbporquedonar.Size = new System.Drawing.Size(547, 283);
+            this.rtbporquedonar.TabIndex = 2;
+            this.rtbporquedonar.Text = resources.GetString("rtbporquedonar.Text");
+            this.rtbporquedonar.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // FrmPorqueDonar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 420);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.rtbporquedonar);
             this.Controls.Add(this.btnSalirPDonar);
-            this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPorqueDonar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Porque Donar";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnSalirPDonar;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rtbporquedonar;
     }
 }

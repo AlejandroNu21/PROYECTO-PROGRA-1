@@ -11,11 +11,11 @@ using System.IO;
 
 namespace ProyectoProgramacion.VISTA
 {
-    public partial class FrmAgendarCitas2 : Form
+    public partial class FrmAgendarCitas : Form
     {
         private List<Donante> Donantes = new List<Donante>();
         private int indice = -1;
-        public FrmAgendarCitas2()
+        public FrmAgendarCitas()
         {
             InitializeComponent();
         }
@@ -67,7 +67,7 @@ namespace ProyectoProgramacion.VISTA
         {
             try
             {
-                StreamReader lector = new StreamReader("Agenda.txt")
+                StreamReader lector = new StreamReader("Agenda.txt");
                 string linea;
                 while ((linea=lector.ReadLine())!=null)
                 {
@@ -83,7 +83,7 @@ namespace ProyectoProgramacion.VISTA
                     persona.Fecha = linea.Substring(0, posicion);
                     linea = linea.Substring(posicion + 1);
                     posicion = linea.IndexOf("|");
-                    Donantes.Add(persona)
+                    Donantes.Add(persona);
                 }
                 lector.Close();
                 actualizaVista();
@@ -122,7 +122,7 @@ namespace ProyectoProgramacion.VISTA
                 Donantes.RemoveAt(indice);
                 actualizaVista();
                 limpiaCampos();
-                indice - 1;
+                indice -1;
             }
             else
             {
@@ -135,7 +135,7 @@ namespace ProyectoProgramacion.VISTA
             TextWriter Escribir = new StreamWriter("Agenda.txt");
             foreach(Donante persona in Donantes)
             {
-                Escribir.WriteLine(persona.Nombre+"|"+persona.Hora+"|"+persona.Fecha+"|")
+                Escribir.WriteLine(persona.Nombre + "|" + persona.Hora + "|" + persona.Fecha + "|");
             }
             Escribir.Close();
             MessageBox.Show("Donantes Guardados");

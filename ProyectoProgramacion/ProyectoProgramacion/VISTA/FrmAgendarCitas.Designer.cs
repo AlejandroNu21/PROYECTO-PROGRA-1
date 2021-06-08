@@ -1,7 +1,7 @@
 ﻿
 namespace ProyectoProgramacion.VISTA
 {
-    partial class FrmAgendarCitas2
+    partial class FrmAgendarCitas
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace ProyectoProgramacion.VISTA
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAgendarCitas2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAgendarCitas));
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.dgvagendarcitas2 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -37,7 +37,7 @@ namespace ProyectoProgramacion.VISTA
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.btnAgregarCita = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.btnSalirAgendarCita2 = new System.Windows.Forms.Button();
             this.lblHora = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
@@ -106,15 +106,15 @@ namespace ProyectoProgramacion.VISTA
             this.lblNombre.Text = "Nombre:";
             this.lblNombre.Click += new System.EventHandler(this.lblNombre_Click);
             // 
-            // btnAgregarCita
+            // btnAgregar
             // 
-            this.btnAgregarCita.Location = new System.Drawing.Point(647, 244);
-            this.btnAgregarCita.Name = "btnAgregarCita";
-            this.btnAgregarCita.Size = new System.Drawing.Size(104, 37);
-            this.btnAgregarCita.TabIndex = 4;
-            this.btnAgregarCita.Text = "Agregar Cita";
-            this.btnAgregarCita.UseVisualStyleBackColor = true;
-            this.btnAgregarCita.Click += new System.EventHandler(this.btnAgendarCita_Click);
+            this.btnAgregar.Location = new System.Drawing.Point(647, 244);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(104, 37);
+            this.btnAgregar.TabIndex = 4;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgendarCita_Click);
             // 
             // btnSalirAgendarCita2
             // 
@@ -188,7 +188,7 @@ namespace ProyectoProgramacion.VISTA
             this.btnFijar.UseVisualStyleBackColor = true;
             this.btnFijar.Click += new System.EventHandler(this.btnFijar_Click);
             // 
-            // FrmAgendarCitas2
+            // FrmAgendarCitas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -201,14 +201,14 @@ namespace ProyectoProgramacion.VISTA
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.lblHora);
             this.Controls.Add(this.btnSalirAgendarCita2);
-            this.Controls.Add(this.btnAgregarCita);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.dgvagendarcitas2);
             this.Controls.Add(this.monthCalendar1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FrmAgendarCitas2";
+            this.Name = "FrmAgendarCitas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Agendar Citas 2";
+            this.Text = "Agendar Citas ";
             this.Load += new System.EventHandler(this.FrmAgendarCitas2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvagendarcitas2)).EndInit();
             this.ResumeLayout(false);
@@ -220,7 +220,7 @@ namespace ProyectoProgramacion.VISTA
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.DataGridView dgvagendarcitas2;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.Button btnAgregarCita;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnSalirAgendarCita2;
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Label lblFecha;

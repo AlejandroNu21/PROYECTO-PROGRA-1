@@ -33,8 +33,8 @@ namespace ProyectoProgramacion.VISTA
             this.btnIngresarBienvenida = new System.Windows.Forms.Button();
             this.btnSalirBienvenida = new System.Windows.Forms.Button();
             this.lblBienvenida = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pbsangre = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbsangre)).BeginInit();
             this.SuspendLayout();
             // 
             // btnIngresarBienvenida
@@ -66,15 +66,15 @@ namespace ProyectoProgramacion.VISTA
             this.lblBienvenida.TabIndex = 3;
             this.lblBienvenida.Text = "BIENVENIDO A NUESTRO SISTEMA";
             // 
-            // pictureBox1
+            // pbsangre
             // 
-            
-            this.pictureBox1.Location = new System.Drawing.Point(114, 47);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(329, 151);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.pbsangre.Image = ((System.Drawing.Image)(resources.GetObject("pbsangre.Image")));
+            this.pbsangre.Location = new System.Drawing.Point(114, 47);
+            this.pbsangre.Name = "pbsangre";
+            this.pbsangre.Size = new System.Drawing.Size(329, 151);
+            this.pbsangre.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbsangre.TabIndex = 2;
+            this.pbsangre.TabStop = false;
             // 
             // FrmBienvenida
             // 
@@ -82,7 +82,7 @@ namespace ProyectoProgramacion.VISTA
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(549, 331);
             this.Controls.Add(this.lblBienvenida);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbsangre);
             this.Controls.Add(this.btnSalirBienvenida);
             this.Controls.Add(this.btnIngresarBienvenida);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -90,7 +90,7 @@ namespace ProyectoProgramacion.VISTA
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bienvenido";
             this.Load += new System.EventHandler(this.FrmBienvenida_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbsangre)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -100,7 +100,7 @@ namespace ProyectoProgramacion.VISTA
 
         private System.Windows.Forms.Button btnIngresarBienvenida;
         private System.Windows.Forms.Button btnSalirBienvenida;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbsangre;
         private System.Windows.Forms.Label lblBienvenida;
     }
 }

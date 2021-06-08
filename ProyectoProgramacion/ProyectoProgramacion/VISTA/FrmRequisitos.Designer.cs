@@ -31,8 +31,8 @@ namespace ProyectoProgramacion.VISTA
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRequisitos));
             this.btnSalirRequisitos = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.rtbrequisitos = new System.Windows.Forms.RichTextBox();
+            this.rtbrequisitos2 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // btnSalirRequisitos
@@ -45,29 +45,31 @@ namespace ProyectoProgramacion.VISTA
             this.btnSalirRequisitos.UseVisualStyleBackColor = true;
             this.btnSalirRequisitos.Click += new System.EventHandler(this.btnSalirRequisitos_Click);
             // 
-            // richTextBox1
+            // rtbrequisitos
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(29, 12);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(350, 350);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            this.rtbrequisitos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbrequisitos.Location = new System.Drawing.Point(26, 12);
+            this.rtbrequisitos.Name = "rtbrequisitos";
+            this.rtbrequisitos.Size = new System.Drawing.Size(354, 350);
+            this.rtbrequisitos.TabIndex = 1;
+            this.rtbrequisitos.Text = resources.GetString("rtbrequisitos.Text");
             // 
-            // richTextBox2
+            // rtbrequisitos2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(416, 12);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(351, 350);
-            this.richTextBox2.TabIndex = 2;
-            this.richTextBox2.Text = resources.GetString("richTextBox2.Text");
+            this.rtbrequisitos2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbrequisitos2.Location = new System.Drawing.Point(389, 12);
+            this.rtbrequisitos2.Name = "rtbrequisitos2";
+            this.rtbrequisitos2.Size = new System.Drawing.Size(388, 350);
+            this.rtbrequisitos2.TabIndex = 2;
+            this.rtbrequisitos2.Text = resources.GetString("rtbrequisitos2.Text");
             // 
             // FrmRequisitos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.rtbrequisitos2);
+            this.Controls.Add(this.rtbrequisitos);
             this.Controls.Add(this.btnSalirRequisitos);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmRequisitos";
@@ -80,7 +82,7 @@ namespace ProyectoProgramacion.VISTA
         #endregion
 
         private System.Windows.Forms.Button btnSalirRequisitos;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox rtbrequisitos;
+        private System.Windows.Forms.RichTextBox rtbrequisitos2;
     }
 }

@@ -31,13 +31,6 @@ namespace ProyectoProgramacion.VISTA
             this.Hide();
         }
 
-        private void btnAgendarCita_Click(object sender, EventArgs e)
-        {
-            FrmAgendarCita1 Citas = new FrmAgendarCita1();
-            Citas.Show();
-            this.Hide();
-        }
-
         private void btnBuscarDonante_Click(object sender, EventArgs e)
         {
             FrmBuscarDonante Busqueda = new FrmBuscarDonante();
